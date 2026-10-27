@@ -1,0 +1,75 @@
+name: Bug report
+description: Something in True Final Ascent doesn't work as it should.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! The more of the fields below you fill in, the faster the bug can be found.
+        **Logs help most:** open the pause menu, pick the session in the list under **BUG REPORT** (bottom right) and
+        click the square export icon (an arrow into a tray) next to the list. The zip goes to the mod's Saved folder,
+        which opens right away. The mod keeps the last 5 sessions, crashes included. Attach that zip below.
+
+  - type: input
+    id: tfa-version
+    attributes:
+      label: TFA version
+      description: Shown in r2modman
+      placeholder: "e.g. 2.10.0"
+    validations:
+      required: true
+
+  - type: input
+    id: peak-version
+    attributes:
+      label: PEAK version
+      description: Shown top right in the main menu.
+      placeholder: "e.g. 3.0.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: players
+    attributes:
+      label: Players
+      options:
+        - Solo
+        - Multiplayer - I was the host
+        - Multiplayer - I was a guest
+        - Multiplayer - I joined late
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce
+      description: Steps, biome or weather, chain code (TFA Builder) or seed, if you know them.
+      placeholder: |
+        1. Start TFA Builder with chain S,M,N
+        2. Light the campfire on the Mesa
+        3. ...
+
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods
+      description: The r2modman profile code or a list of your other mods. Write "none" if TFA was the only mod.
+    validations:
+      required: true
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Log zip and screenshots
+      description: Drag the log zip from the mod's Saved folder and any screenshots or videos in here.
+

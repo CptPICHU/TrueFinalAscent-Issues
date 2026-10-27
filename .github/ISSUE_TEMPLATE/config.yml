@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions and discussion
+    url: https://github.com/CptPICHU/TrueFinalAscent-Issues/discussions
+    about: Not sure it is a bug, or want to talk about an idea first? Ask here.
+  - name: Website and scoreboard
+    url: https://tfa.pichuclub.de
+    about: Daily map times, the Apocalypse chronicle, news and the modding docs.
